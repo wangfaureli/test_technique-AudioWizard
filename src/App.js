@@ -4,9 +4,9 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Home from "./Home";
-import Users from "./Users";
-import Layout from "./Layout";
+import Home from "./Pages/Home";
+import Users from "./Pages/Users";
+import Layout from "./Layout/Layout";
 
 function App() {
   return (
