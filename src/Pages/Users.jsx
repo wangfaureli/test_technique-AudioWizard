@@ -1,8 +1,15 @@
 import React from 'react';
+import { UsernameContext } from "../App";
 
 function Users(props) {
+    const { username } = React.useContext(UsernameContext);
     return (
-        <div><h1>USERS</h1></div>
+        <div>
+            {username &&
+            <div>Hello, I'm {username} and I'm using this app!</div>}
+            {!username &&
+            <div>Hello, I'm an anonymous user using this app!</div>}
+        </div>
     );
 }
 
